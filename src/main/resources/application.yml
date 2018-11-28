@@ -1,0 +1,12 @@
+spring:
+  redis:
+    useSentinel: false
+    host: localhost
+    database: 0
+    port: 6379
+    password:
+    sentinel:
+      master: mymaster
+      nodes:
+        - 127.0.0.1:6379
+        - 192.168.25.144:6379
